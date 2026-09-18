@@ -1,4 +1,4 @@
 .PHONY: test
 
 test:
-	@echo "Здесь пока нет тестов. Первая задача — написать их."
+	PYTHONPATH=. python3 -m unittest discover -s tests -p 'test_*.py' -v
